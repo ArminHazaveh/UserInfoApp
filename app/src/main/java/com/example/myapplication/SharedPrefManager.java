@@ -20,9 +20,9 @@ public class SharedPrefManager {
 
    public static User getUser(Context context) {
       SharedPreferences prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
-      String name = prefs.getString(KEY_NAME, "Not found");
-      String family = prefs.getString(KEY_FAMILY, "Not found");
-      String age = prefs.getString(KEY_AGE, "Not found");
+      String name = prefs.getString(KEY_NAME, "");
+      String family = prefs.getString(KEY_FAMILY, "");
+      String age = prefs.getString(KEY_AGE, "");
       return new User(name, family, age);
    }
 }
