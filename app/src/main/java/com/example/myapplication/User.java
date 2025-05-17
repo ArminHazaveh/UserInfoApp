@@ -3,9 +3,9 @@ package com.example.myapplication;
 public class User {
    String name;
    String family;
-   int age;
+   String age;
 
-   public User(String name, String family, int age) {
+   public User(String name, String family, String age) {
       this.name = name;
       this.family = family;
       this.age = age;
@@ -20,7 +20,7 @@ public class User {
       return family;
    }
 
-   public int getAge() {
+   public String getAge() {
       return age;
    }
 }
